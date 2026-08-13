@@ -6,210 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Van Vo | Portfolio</title>
+<!--
+    <link rel="stylesheet" href="https://vanvostudio.github.io/css/base.css">
+    <link rel="stylesheet" href="https://vanvostudio.github.io/css/layout.css">
+    <link rel="stylesheet" href="https://vanvostudio.github.io/css/components.css">
+-->
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        :root {
-            --blue: #0277c9;
-            --blue-dark: #015f9f;
-            --blue-light: rgba(2, 119, 201, 0.08);
-            --blue-border: rgba(2, 119, 201, 0.25);
-
-            --text: #222;
-            --muted: #5f6870;
-            --background: #f8fbfd;
-            --white: #ffffff;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: var(--text);
-            background-color: var(--background);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 30px;
-        }
-
-
-        /* Navigation */
-
-        header {
-            background-color: var(--white);
-            border-bottom: 3px solid var(--blue);
-            padding: 20px 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav strong {
-            color: var(--blue);
-            font-size: 1.15rem;
-        }
-
-        nav a {
-            color: var(--blue);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: var(--blue-dark);
-        }
-
-
-        /* Hero */
-
-        .hero {
-            padding: 100px 0 90px;
-            background-color: var(--blue-light);
-            border-bottom: 1px solid var(--blue-border);
-        }
-
-        .hero h1 {
-            margin: 0 0 10px;
-            font-size: 3.5rem;
-            line-height: 1.1;
-            color: var(--blue);
-        }
-
-        .subtitle {
-            margin: 0 0 15px;
-            font-size: 1.3rem;
-            color: var(--muted);
-        }
-
-        .hero-description {
-            max-width: 700px;
-            font-size: 1.15rem;
-            color: var(--muted);
-        }
-
-
-        /* Projects */
-
-        .projects {
-            padding: 70px 0 50px;
-        }
-
-        .projects h2,
-        .about h2 {
-            font-size: 2rem;
-            color: var(--blue);
-            margin-bottom: 30px;
-        }
-
-        .project {
-            background-color: var(--white);
-
-            border: 1px solid var(--blue-border);
-            border-left: 5px solid var(--blue);
-            border-radius: 10px;
-
-            padding: 30px;
-            margin-bottom: 20px;
-
-            transition:
-                transform 0.2s,
-                box-shadow 0.2s,
-                border-color 0.2s;
-        }
-
-        .project:hover {
-            transform: translateY(-3px);
-            border-color: var(--blue);
-
-            box-shadow:
-                0 8px 24px rgba(2, 119, 201, 0.15);
-        }
-
-        .project-label {
-            color: var(--blue);
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-
-        .project h3 {
-            margin: 8px 0;
-            font-size: 1.5rem;
-        }
-
-        .project p {
-            color: var(--muted);
-        }
-
-        .project-link {
-            display: inline-block;
-            margin-top: 8px;
-
-            color: var(--blue);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .project-link:hover {
-            color: var(--blue-dark);
-        }
-
-
-        /* About */
-
-        .about {
-            padding: 30px 0 90px;
-        }
-
-        .about p {
-            max-width: 750px;
-            color: var(--muted);
-            font-size: 1.05rem;
-        }
-
-
-        /* Footer */
-
-        footer {
-            background-color: var(--white);
-            border-top: 1px solid var(--blue-border);
-            padding: 30px 0;
-            color: #777;
-        }
-
-
-        /* Mobile */
-
-        @media (max-width: 600px) {
-
-            .hero {
-                padding: 70px 0 60px;
-            }
-
-            .hero h1 {
-                font-size: 2.7rem;
-            }
-
-            .subtitle {
-                font-size: 1.1rem;
-            }
-
-            .projects {
-                padding-top: 50px;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="/vanvostudio.github.io/css/base.css">
+    <link rel="stylesheet" href="/vanvostudio.github.io/css/layout.css">
+    <link rel="stylesheet" href="/vanvostudio.github.io/css/components.css">
 </head>
 
 
@@ -223,7 +28,7 @@
 
                 <strong>Van Vo</strong>
 
-                <a href="#projects">
+                <a href="#units">
                     Projects
                 </a>
 
@@ -242,11 +47,11 @@
 
                 <h1>Van Vo</h1>
 
-                <p class="subtitle">
+                <p class="description">
                     Mathematics • Statistics • Data Science • Education
                 </p>
 
-                <p class="hero-description">
+                <p class="description">
                     I create educational materials and interactive
                     learning experiences focused on mathematics,
                     statistics, and data.
@@ -257,35 +62,33 @@
         </section>
 
 
-        <section class="projects" id="projects">
+        <section class="units" id="units">
 
             <div class="container">
 
                 <h2>Projects</h2>
 
 
-                <div class="project">
+                <div class="unit-card">
 
-                    <div class="project-label">
+                    <div class="unit-number">
                         Education
                     </div>
 
                     <h3>
-                        AP Statistics Interactive Course
+                        AP Statistics Learning Resource
                     </h3>
 
                     <p>
-                        An interactive AP Statistics course featuring
-                        lessons, visualizations, simulations, and
-                        activities designed to help students explore
+                        A supplemental AP Statistics resource featuring notes, 
+                        interactive activities, visualizations, and simulations 
+                        designed to help students explore, practice, and reinforce 
                         statistical concepts.
+
                     </p>
 
-                    <a
-                        class="project-link"
-                        href="https://vanvostudio.github.io/AP-Statistics/"
-                    >
-                        View AP Statistics Course →
+                    <a href="https://vanvostudio.github.io/AP-Statistics/">
+                        Explore the AP Statistics Resource →
                     </a>
 
                 </div>
@@ -295,7 +98,7 @@
         </section>
 
 
-        <section class="about" id="about">
+        <section>
 
             <div class="container">
 
