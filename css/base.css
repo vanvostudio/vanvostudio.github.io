@@ -8,11 +8,16 @@
    ========================= */
 
 :root {
-    /* Colors */
+    /* Colors 
     --blue: #0277c9;
     --blue-dark: #015f9f;
     --blue-light: rgba(2, 119, 201, 0.08);
     --blue-border: rgba(2, 119, 201, 0.25);
+*/
+    --blue: #22489E;
+    --blue-dark: #193878;
+    --blue-light: rgba(34, 72, 158, 0.08);
+    --blue-border: rgba(34, 72, 158, 0.25);
 
     --text: #222;
     --muted: #5f6870;
