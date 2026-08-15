@@ -377,3 +377,42 @@ label {
     }
 
 }
+
+@media (max-width: 900px) {
+    .page-layout {
+    grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+    display: none;
+    }
+
+    .three-column {
+    grid-template-columns: 1fr;
+    }
+
+    .learning-sequence {
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-links {
+    display: none;
+    }
+
+    .facts,
+    .artifact-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .learning-sequence {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    th,
+    td {
+    padding: 0.65rem;
+    font-size: 0.88rem;
+    }
+}

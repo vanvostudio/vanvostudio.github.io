@@ -160,13 +160,18 @@ section {
    ========================= */
 
 footer {
-    padding: 30px 0;
-
-    background-color: var(--white);
-
+    padding: 2rem 1rem;
     border-top: 1px solid var(--blue-border);
+        
+    color: var(--light-blue);
+    background-color: var(--white);
+    background: var(--dark-blue);
+    text-align: center;
 }
 
+footer a {
+    color: var(--white);
+}
 
 /* =========================
    Tablet
